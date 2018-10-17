@@ -23,10 +23,44 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
-h4, #weichen {
+p {
+	font-size: 200%;
+	line-height: 2.5;
+	margin-top: 1em;
+}
+
+#specialp {
+	margin-top: 1em;
+}
+
+#h2index {
+	font-size: 3em !important;
+}
+
+h2 {
+	font-size: 2.3em !important;
+}
+
+h3 {
 	text-align: center !important;
+	margin-top: auto;
+	font-size: 1.7em !important;
+}
+
+h4 {
+	text-align: center !important;
+	margin-top: auto;
+	font-size: 1.4em;
+	font-weight: 700 !important;
+}
+
+#weichen {
+	text-align: center !important;
+	margin-top: auto;
+	font-size: 1.3em;
 }
 
 article, aside, details, figcaption, figure,
@@ -1272,6 +1306,7 @@ input, select, textarea {
 
 		header.major h2, header.major h3 {
 			margin: 1em 0 1.2em 0;
+			text-align: center;
 		}
 
 		header.major p {
@@ -1408,12 +1443,19 @@ input, select, textarea {
 		}
 
 		.image.featured {
-			display: block;
+			display: inline-block;
 			width: 100%;
-			margin: 0 0 2.5em 0;
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
+			margin: 0 0 2.5em 3em;
+			max-width: 450px;
+			float: right;
+		}
+
+		.image.featured1 {
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 2.5em 3em;
+			max-width: 350px;
+			float: right;
 		}
 
 		.image.contact {
@@ -1858,6 +1900,15 @@ input, select, textarea {
 		background-size: cover;
 		padding: 3em 0;
 	}
+	#header-main {
+		background-position: center;
+		background-size: auto, cover;
+		background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("images/dna.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 3em 0;
+		padding-bottom: 16.5em !important;
+	}
 
 	#main-wrapper {
 		background: #fff;
@@ -1872,7 +1923,7 @@ input, select, textarea {
 		background-repeat: repeat-x, no-repeat, repeat;
 		background-size: 100% 100%, 100% 15em, auto auto;
 		background-position: top left, top center, top left;
-		padding: 7em 0 7em 0;
+		padding: 3em 0 1em 0;
 	}
 
 	.wrapper {
@@ -1892,6 +1943,18 @@ input, select, textarea {
 			background-repeat: no-repeat, no-repeat, repeat;
 			background-size: 100% 15em, 100% 15em, auto auto;
 			background-position: top center, bottom center, top left;
+		}
+
+		.wrapper.style2 {
+			position: relative;
+			text-shadow: 1px 1px 0 #fff;
+			background-color: #fff;
+			background-image: url("images/bg03.png"), url("images/bg02.png");
+			background-repeat: no-repeat, repeat;
+			background-size: 100% 15em, auto auto;
+			background-position: top center, top left;
+			min-height: 50em;
+			padding: 3em 0 3em 0;
 		}
 
 		.wrapper.style3 {
@@ -1982,11 +2045,10 @@ input, select, textarea {
 		}
 
 	#copyright {
-		border-top: solid 1px;
+
 		border-color: #444;
 		border-color: rgba(255, 255, 255, 0.075);
 		text-align: center;
-		margin-top: 2em;
 		padding: 3em 0 3em 0;
 		color: inherit;
 	}
@@ -2019,10 +2081,11 @@ input, select, textarea {
 
 			body.homepage #header-wrapper {
 				height: auto;
+				padding-bottom: 10em;
 			}
 
 			#footer-wrapper {
-				padding: 4.5em 0 4.5em 0;
+				padding: 3em 0 0 0;
 			}
 
 			.wrapper {
@@ -2419,7 +2482,7 @@ input, select, textarea {
 
 			#copyright {
 				margin-top: 0;
-				padding: 1em 0 0.5em 0;
+				padding: 0 0 0.5em 0;
 			}
 
 	}
